@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AdminRepository extends JpaRepository<Admin, Long> {
 
-    Admin findByFullNameAndPassword(String fullName, String password);
+    Admin findByFullName(String fullName);
 }
